@@ -27,5 +27,12 @@ namespace DiscordBot.NETCore2._0
                 await Context.Channel.SendMessageAsync("That's not a valid number :crying_cat_face:");
             }
         }
+
+        [Command("Lol")] //Command
+        [Summary("Replys with LOL")] //Description
+        public async Task Hello()
+        {
+                await Context.Channel.SendMessageAsync("LOL");
+        }
     }
 }
