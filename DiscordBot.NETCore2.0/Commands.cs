@@ -30,7 +30,7 @@ namespace DiscordBot.NETCore2._0
 
         [Command("Lol")] //Command
         [Summary("Replys with LOL")] //Description
-        public async Task Hello()
+        public async Task Lol()
         {
                 await Context.Channel.SendMessageAsync("LOL");
         }
