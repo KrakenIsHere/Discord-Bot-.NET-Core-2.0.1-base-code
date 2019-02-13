@@ -14,7 +14,7 @@ namespace DiscordBot.NETCore2._0
         public static DiscordSocketClient client;
         private CommandService commands;
 
-        string token = ""; //Your token here!
+        string token = "Mzc0NDU5NDI0MzgwNjgyMjUx.D0XKjA.b0EueOD5Vl-HH3zNjTyiYyTu5XA"; //Your token here!
 
         public IServiceProvider ConfigServ()
         {
@@ -46,7 +46,7 @@ namespace DiscordBot.NETCore2._0
         public async Task InstallCommands()
         {
             client.MessageReceived += HandleCommand;
-            await commands.AddModulesAsync(Assembly.GetEntryAssembly());
+            await commands.AddModulesAsync(Assembly.GetEntryAssembly(), ConfigServ());
         }
 
         private async Task HandleCommand(SocketMessage arg)
