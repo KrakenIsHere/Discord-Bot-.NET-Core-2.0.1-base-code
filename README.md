@@ -1,7 +1,7 @@
 # Instructions:
 
 ### Step 1:
-Retrieve your token for your bot on https://discordapp.com/developers/applications/(Application Number)/bots
+Retrieve your token for your bot on https://discordapp.com/developers/applications/(ApplicationNumber)/bots
 
 ### Step 2:
 Open the project in an editor (Ex: Visual Studio)
